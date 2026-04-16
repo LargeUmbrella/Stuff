@@ -1,7 +1,7 @@
 let stars =new Array(8400);
 
 function setup(){
-    createCanvas(2500,1440);
+    createCanvas(windowWidth,windowHeight);
     background('black');
     for(let i = 0; i<stars.length;i++){
         stars[i] =new Star();
