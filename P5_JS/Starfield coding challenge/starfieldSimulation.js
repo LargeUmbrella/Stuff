@@ -1,7 +1,9 @@
 let stars =new Array(8400);
-
+var speeed=1;
 function setup(){
-    createCanvas(windowWidth,windowHeight);
+    let canvas = createCanvas(windowWidth,windowHeight);
+    canvas.position(0,0);
+    canvas.style('z-index','-1');
     background('black');
     for(let i = 0; i<stars.length;i++){
         stars[i] =new Star();
@@ -10,9 +12,9 @@ function setup(){
 
 
 function draw(){
-    let speeed = map(mouseX, 0, width, 1, 60);
+    speeed = int(document.getElementById("speed").value);
     translate(width/2,height/2);
-    background('black');
+    background('Darkblue');
     for(let i=0;i<stars.length;i++){
         stars[i].Setspeed(speeed);
         stars[i].update();

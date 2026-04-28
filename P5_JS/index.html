@@ -4,20 +4,49 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Starfield</title>
+    <title>Home Page</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css">
 
     <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>    
+    <script src="Starfield coding challenge/Star.js"></script>
+    <script defer src="Starfield coding challenge/starfieldSimulation.js"></script>
   </head>
-  <style>h1 {text-align: center;}
-
-  </style>
-  <h1>Coming Soon</h1>
 
   <body>
-    <script src="Starfield coding challenge/Star.js"></script>
-    <script src="Starfield coding challenge/starfieldSimulation.js"></script>
+    <header class="container">
+      <hgroup> 
+        <h1> Stuff</h1>
+        <p> A Hub for projects by Amen Akploh</p>
+      </hgroup>
+    </header>
+
+    <main class="container">
+      <section id="background">
+        <label for="speed">
+          Star Speed
+          <input type="range" min="1" max="100" value="5" id="speed" name="speed">
+        </label>
+      </section>
+      <section id="minirepos">
+        <h2>Projects</h2>
+        <p class="grid">
+          <button class="outline contrast">P5.js</button>
+          <button class="outline contrast">Advent of code Java</button>
+        </p>
+        <p class="grid">
+          <button class="outline contrast">C++</button>
+          <button class="outline contrast">Python</button>
+        </p>
+        <p class="grid">
+          <button class="outline contrast">Godot</button>
+        </p>
+      </section>
+    </main>
+    
+
+
   </body>
 </html>
